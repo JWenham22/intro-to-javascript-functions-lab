@@ -54,4 +54,23 @@ console.log('Exercise 5 Result:', greetUser("Sam", "morning"))
 
 
 // Exercise 6: maxOfThree()
+const maxOfThree = (x, y, z) => {
+    if (x > y && x > z) {
+        return x
+    } else if (y > x && y > z) {
+        return y
+    } else  {
+        return z
+    }
+}
 
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 8))
+
+
+
+// Exercise 7: calculateTip()
+function calculateTip(billAmount, tipPercentage) {
+    return (billAmount * tipPercentage) / 100
+}
+
+console.log('Exercise 7 Result:', calculateTip(50, 20))
