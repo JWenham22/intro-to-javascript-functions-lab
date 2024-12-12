@@ -1,3 +1,6 @@
+
+
+
 // Exercise 1: maxOfTwoNumbers()
 const maxOfTwoNumbers = (x, y) => {
     if (x >= y) {
@@ -74,3 +77,69 @@ function calculateTip(billAmount, tipPercentage) {
 }
 
 console.log('Exercise 7 Result:', calculateTip(50, 20))
+
+
+
+// Exercise 8: convertTemperature()
+function convertTemperature(temperature, scale) {
+    if (scale === "C") {
+        return (temperature * 9/5) + 32
+    } else (scale === "F") 
+        return (temperature - 32) * 5/9
+    }
+
+console.log('Exercise 8 Result:', convertTemperature(32, "C"))
+
+
+
+// Exercise 9: basicCalculator
+
+function basicCalculator(num1, num2, operation) {
+    if (operation === 'add') {
+        return num1 + num2
+    } else if (operation === 'subtract') {
+        return num1 - num2 
+    } else if (operation === 'divide') {
+        return num1 / num2
+    } else if (operation === 'multiply') {
+        return num1 * num2
+    }
+}
+
+console.log('Exercise 9 Result:', basicCalculator(10, 5, 'subtract'))
+
+
+
+//Exercise 10: calculateGrade
+
+function calculateGrade(grade) {
+    if (grade >= 90) {
+        return 'A'
+    } else if (grade >= 80) {
+        return 'B'
+    } else if (grade >= 70) {
+        return 'C'
+    } else if (grade >= 60) {
+        return 'D'
+    } else (grade > 60) 
+        return 'F'
+}
+ 
+console.log('Exercise 10 Result:', calculateGrade(85))
+
+
+
+//Exercise 11: createUsername()
+
+function createUsername(firstName, lastName) {
+    const firstPart = firstName.slice(0, 3) 
+    const lastPart = lastName.slice(0, 3)
+    const totalLength = firstName.length + lastName.length
+    const username = firstPart + lastPart + totalLength
+    return username
+}
+
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"))
+
+
+
